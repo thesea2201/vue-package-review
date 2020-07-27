@@ -1,11 +1,11 @@
 <?php
-namespace TS2201\PageReview\Controllers;
+namespace TS2201\VuePageReview\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use TS2201\PageReview\Models\Page;
+use TS2201\VuePageReview\Models\Page;
 
-class PageReviewController extends Controller
+class VuePageReviewController extends Controller
 {
     public function index(Request $request)
     {
@@ -19,14 +19,14 @@ class PageReviewController extends Controller
             }
             $reviews = $page->reviews()
                     ->orderBy(
-                        config('pagereview.order.as'),
-                        config('pagereview.order.by')
+                        config('vuepagereview.order.as'),
+                        config('vuepagereview.order.by')
                     )
                     ->get();
             $reviewsPaginate = $page->reviews()
             ->orderBy(
-                config('pagereview.order.as'),
-                config('pagereview.order.by')
+                config('vuepagereview.order.as'),
+                config('vuepagereview.order.by')
             )
             ->paginate($limit);
 

@@ -1,4 +1,4 @@
-  <!-- File: packages/Acme/PageReview/resources/views/section.blade.php -->
+  <!-- File: packages/Acme/VuePageReview/resources/views/section.blade.php -->
 <div class="container" id="review">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -65,7 +65,7 @@
             },
             fetchPageReviews() {
                 var vm = this;
-                var url = '{{ route('pagereview.index') }}' + '?path=' + this.path + '&page=' + this.pagination.current_page;
+                var url = '{{ route('vuepagereview.index') }}' + '?path=' + this.path + '&page=' + this.pagination.current_page;
 
                 fetch(url)
                     .then(function(response) {
@@ -95,7 +95,7 @@
                     comment: this.comment,
                     username: this.username,
                 };
-                fetch('{{ route('pagereview.store') }}', {
+                fetch('{{ route('vuepagereview.store') }}', {
                     body: JSON.stringify(data),
                     credentials: 'same-origin',
                     headers: {

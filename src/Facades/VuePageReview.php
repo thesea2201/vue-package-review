@@ -1,10 +1,10 @@
 <?php
 
-namespace TS2201\PageReview\Facades;
+namespace TS2201\VuePageReview\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class PageReview extends Facade
+class VuePageReview extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class PageReview extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'pagereview';
+        return 'vuepagereview';
     }
 }

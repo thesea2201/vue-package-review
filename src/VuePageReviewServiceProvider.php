@@ -1,6 +1,6 @@
 <?php
 
-namespace TS2201\PageReview;
+namespace TS2201\VuePageReview;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -14,12 +14,12 @@ class PageReviewServiceProvider extends ServiceProvider
     public function boot()
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'ts2201');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'pagereview');
-        // $this->load(__DIR__.'/../resources/views', 'pagereview');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'vuepagereview');
+        // $this->load(__DIR__.'/../resources/views', 'vuepagereview');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
-        $this->app['router']->namespace('TS2201\\PageReview\\Controllers')
+        $this->app['router']->namespace('TS2201\\VuePageReview\\Controllers')
                 ->middleware(['web'])
                 ->group(function () {
                     $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
@@ -38,11 +38,11 @@ class PageReviewServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/pagereview.php', 'pagereview');
+        $this->mergeConfigFrom(__DIR__.'/../config/vuepagereview.php', 'vuepagereview');
 
         // Register the service the package provides.
-        $this->app->singleton('pagereview', function ($app) {
-            return new PageReview;
+        $this->app->singleton('vuepagereview', function ($app) {
+            return new VuePageReview;
         });
     }
 
@@ -53,7 +53,7 @@ class PageReviewServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['pagereview'];
+        return ['vuepagereview'];
     }
     
     /**
@@ -65,13 +65,13 @@ class PageReviewServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/pagereview.php' => config_path('pagereview.php'),
-        ], 'pagereview.config');
+            __DIR__.'/../config/vuepagereview.php' => config_path('vuepagereview.php'),
+        ], 'vuepagereview.config');
 
         // Publishing the views.
         $this->publishes([
             __DIR__.'/../resources/views' => base_path('resources/views/vendor/ts2201'),
-        ], 'pagereview.views');
+        ], 'vuepagereview.views');
 
         $this->publishes([
             __DIR__.'/../resources/js/' => resource_path('js/vendor/ts2201'),
@@ -80,12 +80,12 @@ class PageReviewServiceProvider extends ServiceProvider
         // Publishing assets.
         /*$this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/ts2201'),
-        ], 'pagereview.views');*/
+        ], 'vuepagereview.views');*/
 
         // Publishing the translation files.
         /*$this->publishes([
             __DIR__.'/../resources/lang' => resource_path('lang/vendor/ts2201'),
-        ], 'pagereview.views');*/
+        ], 'vuepagereview.views');*/
 
         $this->publishes([
             __DIR__ . '/../database/migrations/' => database_path('migrations'),

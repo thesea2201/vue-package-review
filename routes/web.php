@@ -1,4 +1,4 @@
 <?php
-    Route::get('pagereview', 'PageReviewController@index')->name('pagereview.index');
-    Route::post('pagereview', 'PageReviewController@store')->name('pagereview.store');
+    Route::get('vuepagereview', 'VuePageReviewController@index')->name('vuepagereview.index');
+    Route::post('vuepagereview', 'VuePageReviewController@store')->name('vuepagereview.store');
 

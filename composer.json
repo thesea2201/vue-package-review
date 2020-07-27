@@ -1,6 +1,6 @@
 {
-    "name": "ts2201/pagereview",
-    "description": "Add page review in laravel app",
+    "name": "ts2201/vuepagereview",
+    "description": "Add Vue Page Comment in laravel app",
     "license": "MIT",
     "authors": [
         {
@@ -9,8 +9,8 @@
             "homepage": "author homepage"
         }
     ],
-    "homepage": "https://github.com/ts2201/pagereview",
-    "keywords": ["Laravel", "PageReview"],
+    "homepage": "https://github.com/ts2201/vuepagereview",
+    "keywords": ["Laravel", "VuePageReview"],
     "require": {
         "illuminate/support": "~5|~6|~7"
     },
@@ -22,21 +22,21 @@
     },
     "autoload": {
         "psr-4": {
-            "TS2201\\PageReview\\": "src/"
+            "TS2201\\VuePageReview\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TS2201\\PageReview\\Tests\\": "tests"
+            "TS2201\\VuePageReview\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "TS2201\\PageReview\\PageReviewServiceProvider"
+                "TS2201\\VuePageReview\\PageReviewServiceProvider"
             ],
             "aliases": {
-                "PageReview": "TS2201\\PageReview\\Facades\\PageReview"
+                "VuePageReview": "TS2201\\VuePageReview\\Facades\\VuePageReview"
             }
         }
     }

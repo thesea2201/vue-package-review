@@ -1,5 +1,5 @@
 <?php
-namespace TS2201\PageReview\Models;
+namespace TS2201\VuePageReview\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
