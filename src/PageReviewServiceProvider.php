@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramore\PageReview;
+namespace TS2201\PageReview;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,13 +13,13 @@ class PageReviewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'laramore');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'ts2201');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'pagereview');
         // $this->load(__DIR__.'/../resources/views', 'pagereview');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
-        $this->app['router']->namespace('Laramore\\PageReview\\Controllers')
+        $this->app['router']->namespace('TS2201\\PageReview\\Controllers')
                 ->middleware(['web'])
                 ->group(function () {
                     $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
@@ -70,21 +70,21 @@ class PageReviewServiceProvider extends ServiceProvider
 
         // Publishing the views.
         $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/laramore'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/ts2201'),
         ], 'pagereview.views');
 
         $this->publishes([
-            __DIR__.'/../resources/js/' => resource_path('js/vendor/laramore'),
+            __DIR__.'/../resources/js/' => resource_path('js/vendor/ts2201'),
         ], 'public.js');
 
         // Publishing assets.
         /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/laramore'),
+            __DIR__.'/../resources/assets' => public_path('vendor/ts2201'),
         ], 'pagereview.views');*/
 
         // Publishing the translation files.
         /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/laramore'),
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/ts2201'),
         ], 'pagereview.views');*/
 
         $this->publishes([

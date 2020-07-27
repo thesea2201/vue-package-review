@@ -12,7 +12,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require laramore/pagereview
+$ composer require ts2201/pagereview
 ```
 
 ## Usage
@@ -44,14 +44,14 @@ If you discover any security related issues, please email thebienpronguyen2201@g
 
 MIT. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/laramore/pagereview.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/laramore/pagereview.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/laramore/pagereview/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/ts2201/pagereview.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/ts2201/pagereview.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/ts2201/pagereview/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/laramore/pagereview
-[link-downloads]: https://packagist.org/packages/laramore/pagereview
-[link-travis]: https://travis-ci.org/laramore/pagereview
+[link-packagist]: https://packagist.org/packages/ts2201/pagereview
+[link-downloads]: https://packagist.org/packages/ts2201/pagereview
+[link-travis]: https://travis-ci.org/ts2201/pagereview
 [link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/laramore
+[link-author]: https://github.com/ts2201
 [link-contributors]: ../../contributors

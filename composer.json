@@ -1,5 +1,5 @@
 {
-    "name": "laramore/pagereview",
+    "name": "ts2201/pagereview",
     "description": "Add page review in laravel app",
     "license": "MIT",
     "authors": [
@@ -9,7 +9,7 @@
             "homepage": "author homepage"
         }
     ],
-    "homepage": "https://github.com/laramore/pagereview",
+    "homepage": "https://github.com/ts2201/pagereview",
     "keywords": ["Laravel", "PageReview"],
     "require": {
         "illuminate/support": "~5|~6|~7"
@@ -22,21 +22,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Laramore\\PageReview\\": "src/"
+            "TS2201\\PageReview\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laramore\\PageReview\\Tests\\": "tests"
+            "TS2201\\PageReview\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Laramore\\PageReview\\PageReviewServiceProvider"
+                "TS2201\\PageReview\\PageReviewServiceProvider"
             ],
             "aliases": {
-                "PageReview": "Laramore\\PageReview\\Facades\\PageReview"
+                "PageReview": "TS2201\\PageReview\\Facades\\PageReview"
             }
         }
     }

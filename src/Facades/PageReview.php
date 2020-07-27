@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramore\PageReview\Facades;
+namespace TS2201\PageReview\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

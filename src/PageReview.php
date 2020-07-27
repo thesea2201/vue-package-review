@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramore\PageReview;
+namespace TS2201\PageReview;
 
 class PageReview
 {

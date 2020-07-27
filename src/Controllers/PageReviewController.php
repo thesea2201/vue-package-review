@@ -1,9 +1,9 @@
 <?php
-namespace Laramore\PageReview\Controllers;
+namespace TS2201\PageReview\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laramore\PageReview\Models\Page;
+use TS2201\PageReview\Models\Page;
 
 class PageReviewController extends Controller
 {
